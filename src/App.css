@@ -1,25 +1,38 @@
-.passed {
-	background-color: red;
-	color: white;
+body {
+  background-color: white;
 }
 
 .segment {
-	border: solid black 0.2rem;
-	border-radius: 0.5rem;
-	margin: 0.2rem;
-	width: 5rem;
-	font-size: 1rem;
-	font-weight: 900;
-	display: block;
+  border: solid #fc03db 0.15rem;
+  box-shadow: 0 0 0.15rem #fc03db;
+  border-radius: 0.1rem;
+  margin: 0.05rem;
+  width: 5rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: inline-block;
+  height: 2rem;
+  background-color: white;
+}
+.passed {
+  background-color: #fc03db;
+  color: white;
 }
 
-.hour1 {
-	height: 3.5rem;
-}
-
-.hour3 {
-	height: 6rem;
-}
 .clock {
-	display: inline-block;
+  display: inline-block;
+}
+
+.clock-section {
+  margin: 0.5rem;
+  background-color: #c7f4ff;
+  box-shadow: 0 0 0.3rem #00ccff;
+}
+
+.clock-section-name {
+  margin: 0.2rem;
+}
+
+.btn-action {
+  display: block;
 }
