@@ -7,21 +7,23 @@ function ClockSection({ isEditing }: { isEditing: boolean }) {
   const clocks = Array(numClocks).fill(1);
   return (
     <div className="clock-section">
-      <div className="clock-section-name">
-        {!isEditing || sectionName}
-        {isEditing || (
-          <input
-            value={sectionName}
-            onChange={(event) => setSectionName(event.target.value)}
-          />
-        )}
+      <div>
+        <div className="clock-section-name">
+          {!isEditing || sectionName}
+          {isEditing || (
+            <input
+              value={sectionName}
+              onChange={(event) => setSectionName(event.target.value)}
+            />
+          )}
+        </div>
       </div>
       {clocks.map(() => (
         <Clock isEditing={isEditing} />
       ))}
       {isEditing || (
         <button
-          className="btn-action"
+          className="clear add-section"
           onClick={(event) => {
             setNumClocks(numClocks + 1);
           }}

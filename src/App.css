@@ -2,14 +2,17 @@ body {
   background-color: white;
 }
 
+.App {
+  max-width: 38rem;
+}
 .segment {
   border: solid #fc03db 0.15rem;
   box-shadow: 0 0 0.15rem #fc03db;
   border-radius: 0.1rem;
-  margin: 0.05rem;
+  margin: 0rem;
   width: 5rem;
   font-size: 0.8rem;
-  font-weight: 900;
+  font-weight: 700;
   display: inline-block;
   height: 2rem;
   background-color: white;
@@ -21,16 +24,43 @@ body {
 
 .clock {
   display: inline-block;
+  margin: 0.2rem 0.5rem 0.5rem 1rem;
 }
 
+.clock-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+.clear {
+  border: solid #00cdff 0.15rem;
+  box-shadow: 0 0 0.15rem #00cdff;
+  border-radius: 0.1rem;
+  margin: 0 0 0 0.5rem;
+  width: 5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+  height: 2rem;
+  background-color: white;
+}
+
+.add-section {
+  width: 6rem;
+}
 .clock-section {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 1rem;
   background-color: #c7f4ff;
   box-shadow: 0 0 0.3rem #00ccff;
 }
 
 .clock-section-name {
-  margin: 0.2rem;
+  border-bottom-right-radius: 0.5rem;
+  font-weight: 700;
+  background-color: white;
+  display: inline-block;
+  padding: 0.3rem;
+  color: #222;
 }
 
 .btn-action {

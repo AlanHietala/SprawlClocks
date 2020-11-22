@@ -13,7 +13,7 @@ const Clock = ({ isEditing }: { isEditing: boolean }) => {
   const passed00 = clockTime >= 6 ? "passed" : "";
   return (
     <div className="clock">
-      <div>
+      <div className="clock-name">
         {!isEditing || clockName}
         {isEditing || (
           <input
@@ -59,7 +59,9 @@ const Clock = ({ isEditing }: { isEditing: boolean }) => {
       >
         00:00
       </button>
-      <button onClick={() => setClockTime(0)}>Clear</button>
+      <button className="clear" onClick={() => setClockTime(0)}>
+        Clear
+      </button>
     </div>
   );
 };

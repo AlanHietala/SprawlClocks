@@ -14,7 +14,7 @@ function App() {
       ))}
       {isEditing || (
         <button
-          className="btn-action"
+          className="clear add-section"
           onClick={(event) => {
             setNumClockSections(numClockSections + 1);
           }}
@@ -22,7 +22,7 @@ function App() {
           Add Section
         </button>
       )}
-      <button onClick={() => setIsEditing(!isEditing)}>
+      <button className="clear" onClick={() => setIsEditing(!isEditing)}>
         {isEditing ? "edit" : "save"}
       </button>
     </div>
