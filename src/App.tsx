@@ -5,7 +5,7 @@ import ClockSection from "./ClockSection";
 
 function App() {
   const [numClockSections, setNumClockSections] = useState(1);
-  const [isEditing, setIsEditing] = useState(true);
+  const [isEditing, setIsEditing] = useState(false);
   const clocks = Array(numClockSections).fill(1);
   return (
     <div className="App">
@@ -23,7 +23,7 @@ function App() {
         </button>
       )}
       <button className="clear" onClick={() => setIsEditing(!isEditing)}>
-        {isEditing ? "edit" : "save"}
+        {isEditing ? "save" : "edit"}
       </button>
     </div>
   );
