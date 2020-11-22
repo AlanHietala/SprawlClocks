@@ -9,8 +9,8 @@ function ClockSection({ isEditing }: { isEditing: boolean }) {
     <div className="clock-section">
       <div>
         <div className="clock-section-name">
-          {!isEditing || sectionName}
-          {isEditing || (
+          {!isEditing && sectionName}
+          {isEditing && (
             <input
               value={sectionName}
               onChange={(event) => setSectionName(event.target.value)}
@@ -21,7 +21,7 @@ function ClockSection({ isEditing }: { isEditing: boolean }) {
       {clocks.map(() => (
         <Clock isEditing={isEditing} />
       ))}
-      {isEditing || (
+      {isEditing && (
         <button
           className="clear add-section"
           onClick={(event) => {

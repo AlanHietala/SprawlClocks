@@ -14,8 +14,8 @@ const Clock = ({ isEditing }: { isEditing: boolean }) => {
   return (
     <div className="clock">
       <div className="clock-name">
-        {!isEditing || clockName}
-        {isEditing || (
+        {!isEditing && clockName}
+        {isEditing && (
           <input
             type="text"
             value={clockName}
