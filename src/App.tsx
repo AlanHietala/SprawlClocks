@@ -12,7 +12,7 @@ function App() {
       {clocks.map(() => (
         <ClockSection isEditing={isEditing} />
       ))}
-      {isEditing || (
+      {isEditing && (
         <button
           className="clear add-section"
           onClick={(event) => {
